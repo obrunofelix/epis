@@ -1,21 +1,14 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package gestaoepi;
-
-/**
- *
- * @author aluno
- */
+import java.util.Date;
 public class Gestaoepi {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Epi capacete = new Epi("Capacete de segurança", "EPI001", new Date());
+        Epi luvas = new Epi("Luvas Anticorte", "EPI002", new Date());
+        Epi oculos = new Epi ("Oculos de proteçao", "EPI003", new Date());
     }
+    
+    Operario operario1 = new Operario("Igor", "OP123", "MANHA");
+    operario1.adicionarEpi(capacete);
+    operario1.adicionarEpi(luvas);
     
 }
